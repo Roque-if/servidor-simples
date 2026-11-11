@@ -10,5 +10,5 @@ app.get('/status', (req, res) => {res.json({status: 'ok', hora: new Date().toISO
 
 app.post('/echo', (req,res) => {res.status(201).json({recebido: req.body })});
 
-app.listen(PORT, () => {console.log('Servidor rodando em http://localhost:${PORT}')});
+app.listen(PORT, () => {console.log(`Servidor rodando em http://localhost:${PORT}`)});
 
